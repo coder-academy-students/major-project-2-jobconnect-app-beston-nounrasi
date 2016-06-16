@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearifx:after {
+  clear: both;
+}
+
+.navbar-default {
+  border-radius: 0;
+  height: 80px;
+  padding: 15px 0;
+  border: none;
+}
+
+.navbar-brand {
+  letter-spacing: -1px;
+  font-size: 2em;
+  font-weight: 300;
+  color: #1D976c !important;
+}
+
+.navbar-text {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  background-color: #1D976c;
+  color: #fff !important;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+
+#jobs {
+  .job {
+    padding: 1em 0;
+    border-bottom: 1px solid rgba(250,250,250,0.5);
+    h2 {
+      font-size: 2.5em;
+      font-weight: 300;
+      margin-bottom: 0;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+    p {
+      color: rgba(250,250,250,0.5);
+    }
+  }
+}
+
+#links {
+  margin-top: 2em;
+}
