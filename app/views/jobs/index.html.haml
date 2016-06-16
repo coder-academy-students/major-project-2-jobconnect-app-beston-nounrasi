@@ -1,3 +1,9 @@
+
 - @jobs.each do |job|
     %h2= link_to job.title, job
+    Company:
     %p= job.company
+    %p= job.description
+    Posted by:
+    %p= job.user.email
+    %hr
