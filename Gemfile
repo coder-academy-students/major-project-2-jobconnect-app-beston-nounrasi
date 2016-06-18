@@ -20,11 +20,23 @@ gem 'rack-pjax', github: 'afcapel/rack-pjax'
 gem 'remotipart', github: 'mshibuya/remotipart', ref: '3a6acb3'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
-
+#design
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.0'
+gem 'bourbon', '~> 4.2', '>= 4.2.7'
+gem 'neat', '~> 1.7', '>= 1.7.4'
+gem 'refills', '~> 0.1.0'
+gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem "rails-controller-testing", :git => "https://github.com/rails/rails-controller-testing"
+  gem "rspec-rails", "3.5.0.beta1"
+  gem 'factory_girl', '~> 4.7'
+  gem 'capybara', '~> 2.7', '>= 2.7.1'
+  gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
+  gem 'faker', '~> 1.6', '>= 1.6.3'
 end
 
 group :development do
