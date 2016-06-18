@@ -18,6 +18,7 @@ gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'rack-pjax', github: 'afcapel/rack-pjax'
 gem 'remotipart', github: 'mshibuya/remotipart', ref: '3a6acb3'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 
 
