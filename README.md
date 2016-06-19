@@ -1,24 +1,23 @@
-# README
+JobConnect Setup Instructions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Initial Setup
+-git clone the repository to your apps folder
+- run bundle install to setup gems
+- run rails db:migrate
+- rails s to start server
 
-Things you may want to cover:
+My app is setup so when you load the app on localhost you to need to add some stuff before using the app,
+please follow these instructions
 
-* Ruby version
+- open up rails console with rails c
 
-* System dependencies
+type the following in console in sequence
+- Category.connection
+- Category.create(name: "Freelance")
+- Category.create(name: "Graduate")
+- Category.create(name: "Internship")
 
-* Configuration
+These categories are needed in my app for filtering purposes so please add them
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
