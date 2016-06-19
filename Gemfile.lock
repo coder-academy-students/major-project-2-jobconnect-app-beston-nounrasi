@@ -185,6 +185,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
+    pg (0.18.4)
     pkg-config (1.1.7)
     puma (3.4.0)
     rack (2.0.0.rc1)
@@ -310,6 +311,7 @@ DEPENDENCIES
   neat (~> 1.7, >= 1.7.4)
   normalize-rails (~> 4.1, >= 4.1.1)
   paperclip (~> 4.3, >= 4.3.6)
+  pg
   puma (~> 3.0)
   rack-pjax!
   rails (>= 5.0.0.rc1, < 5.1)
