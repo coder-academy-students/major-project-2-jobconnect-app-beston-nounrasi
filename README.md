@@ -1,4 +1,4 @@
-JobConnect Setup Instructions
+#JobConnect Setup Instructions
 
 Initial Setup
 -git clone the repository to your apps folder
