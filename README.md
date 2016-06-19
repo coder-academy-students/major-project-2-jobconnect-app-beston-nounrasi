@@ -19,6 +19,11 @@ type the following in console in sequence
 
 These categories are needed in my app for filtering purposes so please add them
 
+#Design Assests for Project
+
+Check the Design Assests folder contains files for Wireframes, ERD, User journeys, underneath this section is also 
+information regarding the project
+
 
 #Problem Statement – JobConnect
 
