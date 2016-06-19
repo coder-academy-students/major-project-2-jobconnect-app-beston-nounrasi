@@ -20,4 +20,10 @@ type the following in console in sequence
 These categories are needed in my app for filtering purposes so please add them
 
 
+#Problem Statement – JobConnect
 
+Problem:
+ Job Recruiters are looking to connect with recently graduated uni students who need help finding the jobs based on the type of job the student is seeking
+
+Solution:
+Create a market place where it makes it easier for recruiters to post ads and where students can search for particular jobs that are available in the market. The main criteria is the jobs are based on categories of availability such as full-time, part-time, freelancer, etc..
