@@ -1,0 +1,14 @@
+%br
+%h4 Pay $5 and your post will be top priority
+%form#checkout{:action => "/checkout", :method => "post"}
+  #payment-form
+    %input{:type => "submit", :value => "$5 for Top Ad"}/
+%script{:src => "https://js.braintreegateway.com/js/braintree-2.20.0.min.js"}
+:javascript
+  var clientToken = "#{@token}";
+
+  braintree.setup(clientToken, "dropin", {
+    container: "payment-form"
+  });
+
+%br

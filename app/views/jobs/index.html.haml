@@ -1,7 +1,7 @@
 
 - @jobs.each do |job|
     %h2= link_to job.title, job
-    %p= image_tag job.image.url(:large)
+    %p= image_tag job.image.url(:medium)
     %span Company:
     %p= job.company
     %span Job Description:

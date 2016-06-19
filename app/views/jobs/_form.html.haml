@@ -1,9 +1,10 @@
 = simple_form_for(@job, html: {class: 'form-horizontal', multipart: true}) do |f|
+  Please pick Job Type:
   = f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a category"}
   = f.input :title, label: "Job Title"
   = f.input :description, label: "Job Description"
   = f.input :company, label: "Your Company"
   = f.input :url, label: "Link to Job"
   = f.input :image, label: "Upload Image"
-  %br/
+
   = f.button :submit

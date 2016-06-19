@@ -1,6 +1,14 @@
 class JobsController < ApplicationController
   before_action :find_job, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  require "rubygems"
+  require "braintree"
+
+  Braintree::Configuration.environment = :sandbox
+  Braintree::Configuration.merchant_id = "hh95p42ztmvyqyd7"
+  Braintree::Configuration.public_key = "jshqf5qmpky44hbp"
+  Braintree::Configuration.private_key = "93dcc447f0dc70a9d4bbc769cf8f8ae3"
+
 
   def index
     if params[:category].blank?
@@ -12,10 +20,12 @@ class JobsController < ApplicationController
   end
 
   def show
+
   end
 
   def new
     @job = current_user.jobs.build
+    @token = Braintree::ClientToken.generate
   end
 
   def create
@@ -42,6 +52,17 @@ class JobsController < ApplicationController
   def destroy
     @job.destroy
     redirect_to root_path
+  end
+
+  def checkout
+    nonce = params[:payment_method_nonce]
+    result = Braintree::Transaction.sale(
+    :amount => "5.00",
+    :payment_method_nonce => nonce,
+    :options => {
+      :submit_for_settlement => true
+      }
+    )
   end
 
   private

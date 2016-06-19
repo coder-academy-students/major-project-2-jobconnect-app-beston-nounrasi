@@ -19,6 +19,8 @@ gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'rack-pjax', github: 'afcapel/rack-pjax'
 gem 'remotipart', github: 'mshibuya/remotipart', ref: '3a6acb3'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'braintree', '~> 2.62'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 #design
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.0'
