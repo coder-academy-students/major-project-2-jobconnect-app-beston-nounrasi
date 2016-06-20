@@ -21,8 +21,14 @@ These categories are needed in my app for filtering purposes so please add them
 
 #Design Assests for Project
 
-Check the Design Assests folder contains files for Wireframes, ERD, User journeys, underneath this section is also 
+Check the Design Documents folder contains files for Wireframes, ERD, User journeys, underneath this section is also 
 information regarding the project
+
+
+#Depoyment of JobConnect App
+
+Currently is hosted on Heroku, the url is https://limitless-badlands-63024.herokuapp.com/
+Sorry I had trouble deploying my app on AWS couldnt get it to work
 
 
 #Problem Statement – JobConnect
